@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl-BE" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>P.F.U. • Home</title>
+
+    <link rel="stylesheet" href="/css/reset_plus.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed&family=Roboto+Slab&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <%- include('navigation'); -%>
+    <%- include('header'); -%>
+    <main class="contact">
+      <h2>Contact</h2>
+      <h3>Adres</h3>
+      <p>Potterstraat 5 <br>8349 Fleteren <br>Utrecht</p>
+      <h3>E-mail</h3>
+      <p>info@pfu.be</p>
+      <h3>Formulier</h3>
+      <form action="#" method="POST">
+          <fieldset>
+                    <p>
+                      <label for="naam">Naam <strong>*</strong></label>
+                    </p>
+                    <p>
+                      <input type="naam" name="naam" id="naam" placeholder="Typ hier uw voor- en achternaam">
+                    </p>
+                    <p>
+                      <label for="email">E-mailadres <strong>*</strong></label>
+                    </p>
+                    <p>
+                      <input type="email" name="email" id="email" placeholder="Typ hier uw e-mailadres">
+                    </p>
+                    <p>
+                      <label for="email">E-mail bevestigen <strong>*</strong></label>
+                    </p>
+                    <p>
+                      <input type="email" name="email" id="email" placeholder="Typ hier nogmaals uw e-mailadres">
+                    </p>
+                    <p>
+                      <label for="bericht" name="bericht" id="bericht">Bericht <strong>*</strong></label>
+                    </p>
+                    <p>
+                      <textarea name="bericht" rows="6" cols="95" placeholder="Typ hier uw bericht..."></textarea>
+                    </p>
+                  <a href="#"><input type="submit" value="Verzenden" class="submit"></a>
+          </fieldset>
+      </form>
+    </main>
+
+    <%- include('footer'); -%>
+    
+  </body>
+</html>

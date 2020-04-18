@@ -1,0 +1,306 @@
+html {
+  background-color: white;
+}
+
+nav {
+  margin: 2rem;
+}
+
+nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+nav > ul > li > a {
+  color: white;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: #896697;
+  padding: 2rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+}
+
+nav > ul > li > a:hover {
+  color: white;
+  background: #CF6979;
+}
+
+header {
+  background-image: url(/imgs/Kelly_01.jpg);
+  background-position: center;
+  background-size: 135%;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: white;
+  font-size: 10rem;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  word-spacing: 100vw;
+  padding: 2.75rem;
+}
+
+h1 > a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+h1 > a:hover {
+  opacity: 0.5;
+  margin-left: 1rem;
+  color: purple;
+}
+
+main {
+  margin: 3rem;
+  color: black;
+}
+
+h2:nth-child(1) {
+  color: #896697;
+  font-size: 5rem;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  text-align: right;
+  margin-bottom: 2.5rem;
+}
+
+p {
+  color: dimgray;
+  font-size: 1.5rem;
+  font-family: 'Roboto Slab', serif;
+  line-height: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.bron {
+  font-size: 1rem;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 2px;
+  line-height: 0rem;
+  margin-bottom: 2rem;
+}
+
+.bron > a {
+  color: #EF8933;
+}
+
+.bron > a:hover {
+  color: #896697;
+}
+
+h2:nth-child(3) {
+  color: #CF6979;
+  font-size: 3.5rem;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 2.5rem;
+  line-height: 4rem;
+}
+
+h2:nth-child(6) {
+  color: #EB6460;
+  font-size: 3.5rem;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  text-align: right;
+  margin-bottom: 2.5rem;
+  line-height: 4rem;
+}
+
+h3 {
+  color: #EF8933;
+  font-size: 2.5rem;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+footer {
+  background-color: #896697;
+  padding: 3rem;
+}
+
+footer > p {
+  color: white;
+  font-size: 1rem;
+  font-family: 'Roboto Slab', serif;
+  letter-spacing: 2px;
+  line-height: 0rem;
+  margin-bottom: 0rem;
+}
+
+footer > p > a {
+  color: white;
+}
+
+footer > p > a:hover {
+  opacity: 0.5;
+  color: pink;
+}
+
+footer > h1 {
+  color: white;
+  font-size: 3rem;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  word-spacing: 100vw;
+  padding: 0rem 0rem 2.5rem 0rem;
+}
+
+.contact > h3 {
+  font-size: 2rem;
+}
+
+.contact > h3:nth-child(2) {
+  color: #CF6979;
+  margin-bottom: 1rem;
+}
+
+.contact > h3:nth-child(4) {
+  color: #EB6460;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.contact > h3:nth-child(6) {
+  margin-bottom: 1rem;
+}
+
+.contact > p {
+}
+
+.contact > p:nth-child(5) {
+  text-align: right;
+}
+
+strong {
+  color: #EF8933;
+}
+
+
+
+
+
+
+
+
+
+form {
+  width: 100%;
+}
+
+
+#naam {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.25rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+#email {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.25rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+textarea {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.25rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.submit {
+  color: white;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: #896697;
+  padding: 2rem;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+}
+
+.submit:hover {
+  color: white;
+  background: #CF6979;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  filter: grayscale();
+}
+
+img:hover {
+  filter: none;
+}
+
+
+p.info {
+  text-align: right;
+  margin-bottom: 0rem;
+}
+
+p.kleur {
+  color: #CF6979;
+}
+
+button {
+  color: white;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: #896697;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+}
+
+button:hover {
+  color: white;
+  background: #CF6979;
+  cursor: pointer;
+}
+
+.is-checked {
+  background-color: #CF6979;
+}
+
+.button-group {
+  margin-bottom: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.button-group > .button {
+  margin: 0.25rem;
+  width: auto;
+  flex-grow: 1;
+}

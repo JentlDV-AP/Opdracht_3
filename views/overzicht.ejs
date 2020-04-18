@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl-BE" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>P.F.U. • Home</title>
+
+    <link rel="stylesheet" href="/css/reset_plus.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed&family=Roboto+Slab&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <%- include('navigation'); -%>
+    <%- include('header'); -%>
+
+    <main>
+      <h2>Dancing on <br>rainbows</h2>
+      <div class="button-group filter-by-button-group">
+        <button class="button is-checked" data-filter="*">Alles</button>
+        <button class="button" data-filter=".andere">Andere</button>
+        <button class="button" data-filter=".beeldhouwwerk">Beeldhouwwerk</button>
+        <button class="button" data-filter=".fotografie">Fotografie</button>
+        <button class="button" data-filter=".installatie">Installatie</button>
+        <button class="button" data-filter=".mode">Mode</button>
+        <button class="button" data-filter=".schilderij">Schilderij</button>
+        <button class="button" data-filter=".zeefdruk">Zeefdruk</button>
+      </div>
+      <p>Raak de kunstwerken aan om ze kleur en leven in te blazen!</p>
+      <div class="grid">
+      <% for (let i=0; i<posts.length; i++) { %>
+        <section class="post">
+          <%- include('kunstwerkpost', {post: posts[i], index: i}); -%>
+        </section>
+      <% } // close forloop %>
+      </div>
+    </main>
+
+    <%- include('footer'); -%>
+
+    <script src="/js/isotope.js"></script>
+    <script src="/js/script.js"></script>
+
+  </body>
+</html>

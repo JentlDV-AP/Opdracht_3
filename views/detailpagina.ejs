@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl-BE" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>P.F.U. • Home</title>
+
+    <link rel="stylesheet" href="/css/reset_plus.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed&family=Roboto+Slab&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <%- include('navigation'); -%>
+    <%- include('header'); -%>
+
+    <main>
+      <article>
+        <h2><%=post.naam %></h2>
+        <p class="info">Door <%= post.uitvoerder %></p>
+        <p class="info"><%=post.datering %></p>
+        <p class="info kleur"><%=post.beschrijving %></p>
+        <img src="/imgs/<%=post.foto1 %>" alt="<%=post.foto1alt %>" class="foto1"></img><br>
+        <p><%=post.uitleg %></p>
+        <p class="bron">Bron: <a href="<%=post.link %>" target="_blank"><%=post.bron %></a></p>
+      </article>
+      <a href="/overzicht"><button type="button" name="button" class="button">Ga terug</button></a>
+    </main>
+
+    <%- include('footer'); -%>
+
+  </body>
+</html>

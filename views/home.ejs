@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="nl-BE" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>P.F.U. • Home</title>
+
+    <link rel="stylesheet" href="/css/reset_plus.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed&family=Roboto+Slab&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <%- include('navigation'); -%>
+    <%- include('header'); -%>
+    <main>
+      <h2>Welkom</h2>
+      <p>Welkom op de website van P.F.U. - Pure, Fresh, Unique. Hier verzamelen we de meest pure, verse en unieke kunst van over de hele wereld en uit elke periode. Want hoe 'oud' een kunstwerk ook mag zijn, het verliest nooit zijn puurheid en uniekheid.</p>
+      <h2>Werk in<br>de kijker</h2>
+      <p>Elke week staat er een nieuw kunstwerk in de kijker. Raak de foto aan om het kunstwerk kleur en leven in te blazen!</p>
+      <div class="kijker">
+        <section class="post">
+          <%- include('kunstwerkpost', {post: posts[13], index: 13}); -%>
+        </section>
+      </div>
+      <h2>Dancing<br>on Rainbows</h2>
+      <p>Onze nieuwste tentoonstelling, Dancing on Rainbows bevat de meest pure, verse en unieke kunst met een focus op kleur. Bewust en onbewust worden we beïnvloed door de werking van kleur. Speciaal voor onze nieuwste tentoontelling hebben we onze website aangepast. Ook hier draait alles nu om kleur!</p>
+      <h3>Kleur is emotie</h3>
+      <p>Kleuren spelen een grote rol in het gevoel dat we ergens bij krijgen. Deze kleurassociaties worden onder andere gevormd door cultuur, mode, ervaring, persoonlijke voorkeur en kleurbeleving. Het menselijk geheugen is vatbaar voor visuele prikkels en daar is kleur er een van. Hoewel er geen wetenschappelijke bewijzen zijn voor het effect van kleuren, worden op grote schaal wel eigenschappen en uitwerkingen aan toegekend. De betekenis en werking van kleur is erg persoonlijk. Maar er zijn ook overeenkomsten in kleurbeleving.</p>
+      <p class="bron">Bron: <a href="http://www.beeldbalie.nl/betekenis-van-kleur/" target="_blank">Beeldbalie - De betekenis van kleuren</a></p>
+    </main>
+
+    <%- include('footer'); -%>
+
+  </body>
+</html>
